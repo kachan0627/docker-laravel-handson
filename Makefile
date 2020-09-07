@@ -64,3 +64,5 @@ npm:
 yarn:
 	docker-compose exec node yarn
 	docker-compose exec node yarn run dev
+migrate:
+	docker-compose exec app php artisan migrate
