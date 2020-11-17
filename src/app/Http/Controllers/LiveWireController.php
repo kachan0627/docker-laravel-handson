@@ -9,6 +9,6 @@ class LiveWireController extends Controller
         //
         public function index(): void
         {
-            return view('hello.index',$data);
+            return view('hello.index');
         }
 }

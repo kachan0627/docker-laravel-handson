@@ -14,7 +14,9 @@ class CreateSamplesTable extends Migration
     public function up()
     {
         Schema::create('samples', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->string('hoge')->default('');
+            $table->string('hogehoge')->default('');
             $table->timestamps();
         });
     }
